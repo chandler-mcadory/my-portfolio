@@ -1,8 +1,32 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCkSVoQwl4xsQx-bs3e4eY-BgJ2gS4EbAc",
+  authDomain: "chandler-mcadory-portfolio.firebaseapp.com",
+  projectId: "chandler-mcadory-portfolio",
+  storageBucket: "chandler-mcadory-portfolio.appspot.com",
+  messagingSenderId: "26067735398",
+  appId: "1:26067735398:web:93618f3483df8877eaeea7",
+  measurementId: "G-STTXKL159F"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
+
+
 
 export default function Home() {
+  console.log({app})
   return (
     <div className={styles.container}>
       <Head>
