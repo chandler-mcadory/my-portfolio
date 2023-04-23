@@ -6,7 +6,7 @@ function AssignmentCard (props) {
     return (
         
         
-            <Card>
+            <Card style={{maxWidth: "600px", marginLeft: "15px"}}>
                 <Card.Img variant="top" src={props.src} />
                 <Card.Body>
                     <Card.Title>{props.title}</Card.Title>

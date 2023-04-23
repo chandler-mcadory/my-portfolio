@@ -9,6 +9,6 @@ const firebaseApp = initializeApp(firebaseConfig);
 
 
 export const auth = getAuth(firebaseApp);
-export const firestore = getFirestore(firebaseApp);
-export const storage = getStorage(firebaseApp);
+export const firestore = getFirestore(firebaseApp);    // real time db
+export const storage = getStorage(firebaseApp);        // db for user generated content
 export default firebaseApp;

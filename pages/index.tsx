@@ -7,6 +7,7 @@ import background from "../public/images/newportback.jpg"
 import Image from "next/image";
 import AssignmentCard from "../components/Cards";
 import CardList from "../components/Cards";
+import AboutMe from "../components/AboutMe";
 
 export default function Home() {
   return (
@@ -24,17 +25,9 @@ export default function Home() {
 
         </ParallaxLayer>
 
-        <ParallaxLayer className="text-center" offset={.2} speed={.5}>
-          <h2>I'm Chandler McAdory</h2>
-        </ParallaxLayer>
 
-        <ParallaxLayer className="text-center" offset={.45} speed={1}>
-          <h4>I'm a full stack developer who recently graduated from Coding Dojo's full-time boot camp.</h4>
-          <p>I've gotten hands-on experience with MERN, C#, and Python.</p>
-          <p>Impressively, I can type parentheses without looking.</p>
-        </ParallaxLayer>
-
-        <ParallaxLayer className="text-center" offset={.45} speed={1}>
+        <ParallaxLayer className="text-center" offset={.2} speed={1}>
+          <AboutMe />
           <CardList />
         </ParallaxLayer>
         

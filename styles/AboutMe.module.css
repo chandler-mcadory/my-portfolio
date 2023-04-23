@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.card {
+    background-color: rgb(48, 48, 48);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.introCard {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.leftSection,
+.rightSection {
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-in-out;
+}
+
+.leftSection {
+    margin-top: 80px;
+}
+
+.rightSection {
+    margin-top: 300px;
+}
+
+.typewriterText {
+    display: inline;
+    border-right: 2px solid;
+    animation: typewriter 2s steps(40) 1s infinite;
+}
+
+@keyframes typewriter {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.finalParagraph {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-in-out;
+}
